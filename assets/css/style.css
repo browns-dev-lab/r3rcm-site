@@ -2579,7 +2579,7 @@ input[type=radio] {
 }
 
 .navbar .navbar-brand img {
-    max-width: 130px
+    max-width: 300px
 }
 
 .navbar .logo-light {
@@ -3966,7 +3966,7 @@ input[type=radio] {
 .footer .footer-primary {
     padding-top: 85px;
     padding-bottom: 60px;
-    background-color: #1d2a4d
+    background-color: #ffff
 }
 
 .footer .footer-secondary {
@@ -4262,7 +4262,7 @@ input[type=radio] {
 }
 
 .slider .slide__title {
-    font-size: 75px;
+    font-size: 65px;
     line-height: 1.1;
     margin-bottom: 25px
 }
@@ -4727,7 +4727,7 @@ input[type=radio] {
 .features-layout2 .heading__icon {
     font-size: 60px;
     line-height: 1;
-    color: #35fff0
+    color: #0000
 }
 
 .features-layout2 .feature-item .icon-outlined:hover {
