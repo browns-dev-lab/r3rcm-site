@@ -653,8 +653,8 @@ https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
       </script>
 
       <!-- ========================
-        Specializations Carousel
-      =========================== -->
+  Specializations Carousel (Popup Version)
+=========================== -->
       <section class="services-layout1 services-carousel pt-100 pb-80">
         <div class="bg-img">
           <img src="assets/images/backgrounds/1.jpg" alt="background" />
@@ -690,104 +690,145 @@ https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
             ]
           }'
               >
-                <!-- Card -->
-                <div class="service-item">
-                  <div class="service__content">
+                <!-- Existing Cards -->
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-user-doctor','Internal Medicine','Chronic care, preventive services, and E/M coding with strong eligibility checks and denial prevention.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-user-doctor mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Internal Medicine</h4>
-                    <p class="service__desc">
-                      Chronic care, preventive services, and E/M coding with
-                      strong eligibility checks and denial prevention.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-bone','Orthopedics','Surgical coding, injections, imaging, modifiers, and prior authorizations with detailed documentation review.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-bone mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Orthopedics</h4>
-                    <p class="service__desc">
-                      Surgical coding, injections, imaging, modifiers, and prior
-                      authorizations with detailed documentation review.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-heart-pulse','Cardiology','Diagnostic tests, cath procedures, device implants, and bundled service appeals with split billing.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-heart-pulse mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Cardiology</h4>
-                    <p class="service__desc">
-                      Diagnostic tests, cath procedures, device implants, and
-                      bundled service appeals with split billing.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-user-doctor','General Surgery','Global surgery packages, modifier tracking, and multi-payer inpatient & outpatient billing.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-user-doctor mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">General Surgery</h4>
-                    <p class="service__desc">
-                      Global surgery packages, modifier tracking, and
-                      multi-payer inpatient & outpatient billing.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-brain','Psychiatry','Behavioral health coding, telehealth billing, parity compliance, and confidential patient statements.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-brain mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Psychiatry</h4>
-                    <p class="service__desc">
-                      Behavioral health coding, telehealth billing, parity
-                      compliance, and confidential patient statements.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-x-ray','Radiology','Professional & technical components, multiple view modifiers, and medical necessity validation.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-x-ray mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Radiology</h4>
-                    <p class="service__desc">
-                      Professional & technical components, multiple view
-                      modifiers, and medical necessity validation.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <!-- NEW SPECIALIZATIONS -->
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-heart','Vascular','Addresses endovascular procedures, stents, dialysis access, and device HCPCS coding with bundle management and appeals.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-heart mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Vascular</h4>
-                    <p class="service__desc">
-                      Endovascular procedures, stents, dialysis access, and
-                      HCPCS device coding with appeals.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
-                    <h4 class="service__title">OB / GYN</h4>
-                    <p class="service__desc">
-                      Prenatal care, deliveries, maternity global billing, and
-                      postpartum claim splits.
-                    </p>
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-baby','OB/GYN','Manages prenatal care, deliveries, and GYN surgeries using maternity global codes, high-risk coverage verification, and postpartum billing splits.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-baby mb-20"
+                      style="font-size: 38px"
+                    ></i>
+                    <h4 class="service__title">OB/GYN</h4>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-brain','Neurology','Codes EEGs, EMGs, stroke interventions, and infusion services accurately with split billing and authorization management.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-brain mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Neurology</h4>
-                    <p class="service__desc">
-                      EEG, EMG, stroke interventions, infusion services, and
-                      authorization management.
-                    </p>
                   </div>
                 </div>
 
-                <div class="service-item">
-                  <div class="service__content">
+                <div
+                  class="service-item"
+                  style="cursor: pointer; margin: 0 12px"
+                  onclick="openSpecPopup('fa-ambulance','Emergency Medicine','Handles high-volume, unscheduled visits with critical care time-based coding, trauma levels, and rapid eligibility verification.')"
+                >
+                  <div class="service__content text-center">
+                    <i
+                      class="fa-solid fa-ambulance mb-20"
+                      style="font-size: 38px"
+                    ></i>
                     <h4 class="service__title">Emergency Medicine</h4>
-                    <p class="service__desc">
-                      High-volume visits, critical care time coding, trauma
-                      levels, and rapid eligibility verification.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -808,6 +849,64 @@ https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
           </div>
         </div>
       </section>
+
+      <!-- Specialization Popup -->
+      <div
+        id="specPopup"
+        style="
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 9999;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            background: #fff;
+            max-width: 520px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            text-align: center;
+          "
+        >
+          <button
+            onclick="closeSpecPopup()"
+            style="
+              position: absolute;
+              top: 15px;
+              right: 18px;
+              background: none;
+              border: none;
+              font-size: 22px;
+              cursor: pointer;
+            "
+          >
+            ✕
+          </button>
+
+          <i id="specIcon" class="fa-solid mb-20" style="font-size: 46px"></i>
+          <h3 id="specTitle" style="margin-bottom: 15px"></h3>
+          <p id="specDesc" style="font-size: 16px; line-height: 1.6"></p>
+        </div>
+      </div>
+
+      <script>
+        function openSpecPopup(icon, title, desc) {
+          document.getElementById("specIcon").className = "fa-solid " + icon;
+          document.getElementById("specTitle").innerText = title;
+          document.getElementById("specDesc").innerText = desc;
+          document.getElementById("specPopup").style.display = "flex";
+        }
+
+        function closeSpecPopup() {
+          document.getElementById("specPopup").style.display = "none";
+        }
+      </script>
 
       <!-- ======================
       Team
