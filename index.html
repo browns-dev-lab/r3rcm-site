@@ -652,314 +652,189 @@
       </script>
 
       <!-- ========================
-  Specializations Carousel (Popup Version)
-=========================== -->
-      <section class="services-layout1 services-carousel pt-100 pb-80">
-        <div class="bg-img">
-          <img src="assets/images/backgrounds/1.jpg" alt="background" />
-        </div>
-
+  <!-- ============================
+Specializations Grid
+============================ -->
+      <section class="services-layout1 pt-100 pb-80">
         <div class="container">
           <!-- Heading -->
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-              <div class="heading text-center mb-60">
-                <h2 class="heading__subtitle">Specialized Expertise</h2>
-                <h3 class="heading__title">
-                  Specialty-Focused Revenue Cycle Management
-                </h3>
-              </div>
+            <div class="col-12 text-center mb-60">
+              <h2 class="heading__subtitle">Specialized Expertise</h2>
+              <h3 class="heading__title">
+                Specialty-Focused Revenue Cycle Management
+              </h3>
             </div>
           </div>
 
-          <!-- Carousel -->
+          <!-- Grid -->
           <div class="row">
-            <div class="col-12">
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
               <div
-                class="slick-carousel"
-                data-slick='{
-            "slidesToShow": 3,
-            "slidesToScroll": 1,
-            "autoplay": true,
-            "arrows": false,
-            "dots": true,
-            "responsive": [
-              {"breakpoint": 992, "settings": {"slidesToShow": 2}},
-              {"breakpoint": 767, "settings": {"slidesToShow": 1}}
-            ]
-          }'
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='internal-medicine.html'"
               >
-                <!-- Existing Cards -->
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-user-doctor','Internal Medicine','Chronic care, preventive services, and E/M coding with strong eligibility checks and denial prevention.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-user-doctor mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Internal Medicine</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-bone','Orthopedics','Surgical coding, injections, imaging, modifiers, and prior authorizations with detailed documentation review.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-bone mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Orthopedics</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-heart-pulse','Cardiology','Diagnostic tests, cath procedures, device implants, and bundled service appeals with split billing.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-heart-pulse mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Cardiology</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-user-doctor','General Surgery','Global surgery packages, modifier tracking, and multi-payer inpatient & outpatient billing.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-user-doctor mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">General Surgery</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-brain','Psychiatry','Behavioral health coding, telehealth billing, parity compliance, and confidential patient statements.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-brain mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Psychiatry</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-x-ray','Radiology','Professional & technical components, multiple view modifiers, and medical necessity validation.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-x-ray mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Radiology</h4>
-                  </div>
-                </div>
-
-                <!-- NEW SPECIALIZATIONS -->
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-heart','Vascular','Addresses endovascular procedures, stents, dialysis access, and device HCPCS coding with bundle management and appeals.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-heart mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Vascular</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-baby','OB/GYN','Manages prenatal care, deliveries, and GYN surgeries using maternity global codes, high-risk coverage verification, and postpartum billing splits.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-baby mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">OB/GYN</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-brain','Neurology','Codes EEGs, EMGs, stroke interventions, and infusion services accurately with split billing and authorization management.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-brain mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Neurology</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup('fa-ambulance','Emergency Medicine','Handles high-volume, unscheduled visits with critical care time-based coding, trauma levels, and rapid eligibility verification.')"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-ambulance mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Emergency Medicine</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup(
-                    'fa-notes-medical',
-                    'Pain Management',
-                    'Interventional and chronic pain services including injections, nerve blocks, and implantable devices with strong focus on prior authorizations, modifiers, and payer compliance.'
-                  )"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-notes-medical mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Pain Management</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup(
-                    'fa-person-walking',
-                    'Physical Therapy',
-                    'Time-based and modality-driven billing with strict unit control, plan-of-care certification tracking, visit limits, and medical necessity validation.'
-                  )"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-person-walking mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Physical Therapy</h4>
-                  </div>
-                </div>
-
-                <div
-                  class="service-item"
-                  style="cursor: pointer; margin: 0 12px"
-                  onclick="openSpecPopup(
-                    'fa-dumbbell',
-                    'Sports Medicine',
-                    'Non-surgical and minimally invasive treatment of athletic injuries including injections, imaging, rehab coordination, and bundled service management.'
-                  )"
-                >
-                  <div class="service__content text-center">
-                    <i
-                      class="fa-solid fa-dumbbell mb-20"
-                      style="font-size: 38px"
-                    ></i>
-                    <h4 class="service__title">Sports Medicine</h4>
-                  </div>
-                </div>
+                <i
+                  class="fa-solid fa-user-doctor mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Internal Medicine</h4>
               </div>
             </div>
-          </div>
 
-          <!-- CTA -->
-          <div class="row mt-50">
-            <div class="col-12 text-center">
-              <a
-                href="specializations.html"
-                class="btn btn__secondary btn__rounded"
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='orthopedics.html'"
               >
-                <span>View All Specializations</span>
-                <i class="icon-arrow-right"></i>
-              </a>
+                <i class="fa-solid fa-bone mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">Orthopedics</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='cardiology.html'"
+              >
+                <i
+                  class="fa-solid fa-heart-pulse mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Cardiology</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='general-surgery.html'"
+              >
+                <i
+                  class="fa-solid fa-user-doctor mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">General Surgery</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='psychiatry.html'"
+              >
+                <i class="fa-solid fa-brain mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">Psychiatry</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='radiology.html'"
+              >
+                <i class="fa-solid fa-x-ray mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">Radiology</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='vascular.html'"
+              >
+                <i class="fa-solid fa-heart mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">Vascular</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='ob-gyn.html'"
+              >
+                <i class="fa-solid fa-baby mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">OB/GYN</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='neurology.html'"
+              >
+                <i class="fa-solid fa-brain mb-20" style="font-size: 38px"></i>
+                <h4 class="service__title">Neurology</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='emergency-medicine.html'"
+              >
+                <i
+                  class="fa-solid fa-ambulance mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Emergency Medicine</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='pain-management.html'"
+              >
+                <i
+                  class="fa-solid fa-notes-medical mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Pain Management</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='physical-therapy.html'"
+              >
+                <i
+                  class="fa-solid fa-person-walking mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Physical Therapy</h4>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-30">
+              <div
+                class="service-item text-center"
+                style="cursor: pointer"
+                onclick="window.location.href='sports-medicine.html'"
+              >
+                <i
+                  class="fa-solid fa-dumbbell mb-20"
+                  style="font-size: 38px"
+                ></i>
+                <h4 class="service__title">Sports Medicine</h4>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Specialization Popup -->
-      <div
-        id="specPopup"
-        style="
-          display: none;
-          position: fixed;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.7);
-          z-index: 9999;
-          align-items: center;
-          justify-content: center;
-        "
-      >
-        <div
-          style="
-            background: #fff;
-            max-width: 520px;
-            width: 90%;
-            padding: 40px;
-            border-radius: 12px;
-            position: relative;
-            text-align: center;
-          "
-        >
-          <button
-            onclick="closeSpecPopup()"
-            style="
-              position: absolute;
-              top: 15px;
-              right: 18px;
-              background: none;
-              border: none;
-              font-size: 22px;
-              cursor: pointer;
-            "
-          >
-            ✕
-          </button>
-
-          <i id="specIcon" class="fa-solid mb-20" style="font-size: 46px"></i>
-          <h3 id="specTitle" style="margin-bottom: 15px"></h3>
-          <p id="specDesc" style="font-size: 16px; line-height: 1.6"></p>
-        </div>
-      </div>
-
-      <script>
-        function openSpecPopup(icon, title, desc) {
-          document.getElementById("specIcon").className = "fa-solid " + icon;
-          document.getElementById("specTitle").innerText = title;
-          document.getElementById("specDesc").innerText = desc;
-          document.getElementById("specPopup").style.display = "flex";
-        }
-
-        function closeSpecPopup() {
-          document.getElementById("specPopup").style.display = "none";
-        }
-      </script>
 
       <!-- ======================
       Team
@@ -1140,124 +1015,5 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!-- Reveal Veil -->
-    <div
-      id="revealVeil"
-      style="
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: 9999;
-
-        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-        animation: veilReveal 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      "
-    ></div>
-
-    <!-- FX Canvas -->
-    <canvas
-      id="launchCanvas"
-      style="position: fixed; inset: 0; z-index: 9998; pointer-events: none"
-    ></canvas>
-
-    <style>
-      @keyframes veilReveal {
-        0% {
-          clip-path: polygon(49% 0, 51% 0, 51% 100%, 49% 100%);
-        }
-        60% {
-          clip-path: polygon(35% 0, 65% 0, 65% 100%, 35% 100%);
-        }
-        100% {
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        }
-      }
-    </style>
-
-    <script>
-      /* ---------- CANVAS SETUP ---------- */
-      const canvas = document.getElementById("launchCanvas");
-      const ctx = canvas.getContext("2d");
-
-      function resize() {
-        canvas.width = innerWidth;
-        canvas.height = innerHeight;
-      }
-      resize();
-      addEventListener("resize", resize);
-
-      const cx = canvas.width / 2;
-      const cy = canvas.height / 2;
-
-      /* ---------- EXPLOSION ---------- */
-      const particles = Array.from({ length: 180 }).map(() => ({
-        x: cx,
-        y: cy,
-        vx: (Math.random() - 0.5) * 14,
-        vy: (Math.random() - 0.5) * 14,
-        r: Math.random() * 4 + 2,
-        life: Math.random() * 60 + 60,
-        c: Math.random() > 0.5 ? "rgba(255,215,0,0.95)" : "rgba(226,73,7,0.95)",
-      }));
-
-      /* ---------- FLOWERS ---------- */
-      const flowers = Array.from({ length: 80 }).map(() => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height - canvas.height,
-        s: Math.random() * 2.5 + 1,
-        r: Math.random() * 6 + 5,
-        a: Math.random() * Math.PI * 2,
-      }));
-
-      function drawFlower(f) {
-        ctx.save();
-        ctx.translate(f.x, f.y);
-        ctx.rotate(f.a);
-        ctx.fillStyle = "rgba(226,73,7,0.8)";
-        for (let i = 0; i < 6; i++) {
-          ctx.beginPath();
-          ctx.ellipse(0, f.r, f.r / 2, f.r, 0, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.rotate(Math.PI / 3);
-        }
-        ctx.restore();
-      }
-
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        particles.forEach((p) => {
-          if (p.life-- > 0) {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = p.c;
-            ctx.fill();
-            p.x += p.vx;
-            p.y += p.vy;
-          }
-        });
-
-        flowers.forEach((f) => {
-          drawFlower(f);
-          f.y += f.s;
-          f.a += 0.02;
-          if (f.y > canvas.height + 30) {
-            f.y = -30;
-            f.x = Math.random() * canvas.width;
-          }
-        });
-
-        requestAnimationFrame(animate);
-      }
-
-      animate();
-
-      /* ---------- CLEANUP ---------- */
-      setTimeout(() => {
-        document.getElementById("revealVeil")?.remove();
-        canvas.remove();
-      }, 6000);
-    </script>
   </body>
 </html>
